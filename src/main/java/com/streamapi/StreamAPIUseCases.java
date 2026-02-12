@@ -4,12 +4,12 @@ import java.util.*;
 public class StreamAPIUseCases {
     public static void main(String[] args) {
 
-        Optional<Integer> firstEven =
-            Arrays.asList(1,3,5,6,7,8)
-                  .stream()
-                  .filter(n -> n % 2 == 0)
-                  .findFirst();
+        List<Integer> nums = Arrays.asList(5,2,9,1,7);
 
-        System.out.println(firstEven.orElse(-1));
+        int min = nums.stream().min(Integer::compare).get();
+        int max = nums.stream().max(Integer::compare).get();
+
+        System.out.println("Min = " + min);
+        System.out.println("Max = " + max);
     }
 }
