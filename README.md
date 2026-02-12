@@ -1,39 +1,39 @@
-# Java Stream API Use Cases
+# Java Stream API Demonstration Project
 
-## Project Overview
-This project implements Java Stream API Use Cases to demonstrate functional programming concepts in Java.
+## Overview
+This project presents a structured set of Stream API use cases in Java. It demonstrates how functional-style operations can be performed on collections using streams, lambda expressions, and built-in stream methods.
 
-## UC1: Create Stream and iterate elements
-Ability to Create a Stream and Iterate to show each element of the stream.
+## UC2.1 — Stream creation and element traversal
+Build a stream from a collection and iterate through it to display every element.
 
-## UC2: Transform Elements using map
-Ability to Transform each element to double and store the result.
+## UC2.2 — Value transformation using map
+Use the map operation to modify each element in the stream (such as multiplying values) and produce transformed output.
 
-## UC3: Collect results after map
-Ability to store the transformed double value into a new List.
+## UC2.3 — Collecting transformed results
+Gather the processed stream elements into a new List using a collector.
 
-## UC4: Filter even numbers using filter
-Ability to filter the even numbers from the number Stream and store the result.
+## UC2.4 — Filtering even numbers
+Apply a filter condition to extract only even values from the stream.
 
-## UC5: Find first even number using findfirst
-Ability to peak and show the first even number in the number stream.
+## UC2.5 — Retrieving the first match
+Locate and display the first element in the stream that meets a condition (first even number).
 
-## UC6: Find Min and Max using min and max
-Ability to find min and max even number in the number stream.
+## UC2.6 — Finding minimum and maximum
+Identify the lowest and highest values present in the stream.
 
-## UC7: Sum and average of elements
-Ability to find the sum and the average in the number stream.
+## UC2.7 — Computing sum and average
+Generate summary statistics such as total and average from numeric stream data.
 
-## UC8: Match all or even numbers
-Ability to find if all the number or atleast one number is even in the number stream.
+## UC2.8 — Condition matching checks
+Verify whether all elements or at least one element satisfies a specified rule.
 
-## UC9: Sort ascending using sorted
-Ability to sort the number stream in Ascending Order.
+## UC2.9 — Sorting in ascending order
+Sort the stream elements in ascending sequence.
 
 ## How to Run
 
-Compile using:
+Compile:
 javac StreamAPIUseCases.java
 
-Run using:
+Run:
 java StreamAPIUseCases
