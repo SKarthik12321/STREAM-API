@@ -1,17 +1,15 @@
 package com.streamapi;
 import java.util.*;
-import java.util.stream.*;
 
 public class StreamAPIUseCases {
     public static void main(String[] args) {
 
-        IntSummaryStatistics stats =
-            Arrays.asList(2,4,6,8,10)
-                  .stream()
-                  .mapToInt(Integer::intValue)
-                  .summaryStatistics();
+        List<Integer> nums = Arrays.asList(2,4,6,8,9);
 
-        System.out.println("Sum = " + stats.getSum());
-        System.out.println("Average = " + stats.getAverage());
+        boolean allEven = nums.stream().allMatch(n -> n % 2 == 0);
+        boolean anyEven = nums.stream().anyMatch(n -> n % 2 == 0);
+
+        System.out.println("All even = " + allEven);
+        System.out.println("Any even = " + anyEven);
     }
 }
